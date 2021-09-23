@@ -19,5 +19,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@master
 
-      - name: Lint
-        uses: actionshub/terraform-lint@master
+      - name: Terraform lint
+        uses: actionshub/terraform-lint@main
+
+      - name: Files lint
+        run: |
+          make "lint-files"
