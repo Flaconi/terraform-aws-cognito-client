@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: terraform-aws-cognito-client
+  description: >
+    This module will create AWS Cognito User Pool Client
+  annotations:
+    github.com/project-slug: Flaconi/terraform-aws-cognito-client
+  tags:
+    - terraform
+    - aws
+    - cognito
+
+spec:
+  type: library
+  lifecycle: production
+  owner: group:platform
+  system: aws-infrastructure
+  providesApis: []
